@@ -1,8 +1,5 @@
 group 'io.carius.lars.ar_flutter_plugin'
 version '1.0-SNAPSHOT'
-kotlinOptions {
-    jvmTarget = "1.8"
-}
 buildscript {
     ext.kotlin_version = "1.8.10" // for example
     repositories {
@@ -30,7 +27,9 @@ android {
     namespace "io.carius.lars.ar_flutter_plugin"
 
     compileSdkVersion 33
-
+    kotlinOptions {
+        jvmTarget = "17"
+    }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
